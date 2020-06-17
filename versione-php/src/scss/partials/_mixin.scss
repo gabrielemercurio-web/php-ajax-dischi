@@ -1,0 +1,11 @@
+@mixin my-flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin my-css-grid ($min) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+    grid-gap: 20px;
+}

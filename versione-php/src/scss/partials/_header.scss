@@ -1,0 +1,14 @@
+header {
+    width: 100vw;
+    height: 80px;
+    background-color: $colore_secondario;
+
+    img {
+        height: 70%;;
+    }
+
+    .header {
+        height: 100%;
+        @include my-flex(space-between, center);
+    }
+}

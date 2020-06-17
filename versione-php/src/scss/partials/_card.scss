@@ -1,0 +1,23 @@
+main .card {
+    @include my-flex(space-between, center);
+    flex-direction: column;
+
+    background-color: $colore_secondario;
+    padding: 20px;
+    height: 350px;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    h4 {
+        color: #fff;
+    }
+
+    p {
+        color: #fff;
+    }
+}

@@ -1,0 +1,7 @@
+main {
+    padding: 200px 0px;
+
+    section {
+        @include my-css-grid(200px);
+    }
+}
