@@ -80,16 +80,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>PHP Ajax Dischi</title>
+        <title>PHP Dischi</title>
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="public/app.css">
+        <link rel="stylesheet" href="../public/app.css">
     </head>
     <body>
 
         <header>
             <div class="header container">
-                <img src="logo.png" alt="logo">
+                <img src="../logo.png" alt="logo">
             </div>
         </header>
 

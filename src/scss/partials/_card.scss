@@ -5,6 +5,13 @@ main .card {
     background-color: $colore_secondario;
     padding: 20px;
     height: 350px;
+    cursor: pointer;
+    transition: 200ms ease-out;
+
+    &:hover {
+        transform: scale(1.03);
+        box-shadow: 0px 10px 15px 5px #0006;
+    }
 
     img {
         display: block;
