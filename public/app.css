@@ -53,7 +53,7 @@ main .card {
 }
 
 main .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
   box-shadow: 0px 10px 15px 5px #0006;
 }
 
