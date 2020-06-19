@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>PHP Dischi</title>
+        <title>Ajax Dischi</title>
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../public/app.css">
@@ -20,8 +20,19 @@
 
         <main>
             <div class="container">
-                <section>
+                <section id="filtro">
+                    <div>
+                        <select class="filtro">
+                            <option value="Tutti">Tutti</option>
+                            <option value="Metal">Metal</option>
+                            <option value="Jazz">Jazz</option>
+                            <option value="Pop">Pop</option>
+                            <option value="Rock">Rock</option>
+                        </select>
+                    </div>
+                </section>
 
+                <section id="card">
                 </section>
             </div>
         </main>

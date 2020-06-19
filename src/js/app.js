@@ -6,7 +6,7 @@ $(document).ready(function() {
     var template = Handlebars.compile(source);
 
     $.ajax ({
-        'url': '../versione-php/database_dischi.php',
+        'url': 'database_dischi.php',
         'method': 'GET',
         'success': function (data) {
 
@@ -18,21 +18,23 @@ $(document).ready(function() {
                 var author = disco_corrente.author;
                 var year = disco_corrente.year;
 
-                var cd = {
+                var card = {
                     'copertina': poster,
                     'titolo': title,
                     'autore': author,
                     'anno': year
                 }
 
-                var html = template(cd);
+                var html = template(card);
 
-                $('main section').append(html);
+                $('main #card').append(html);
             }
         },
         'error': function () {
             console.log('ERRORE!!');
         },
     });
+
+
 
 });

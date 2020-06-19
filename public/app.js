@@ -10983,7 +10983,7 @@ $(document).ready(function () {
   var source = $('#entry-template').html();
   var template = Handlebars.compile(source);
   $.ajax({
-    'url': '../versione-php/database_dischi.php',
+    'url': 'database_dischi.php',
     'method': 'GET',
     'success': function success(data) {
       for (var i = 0; i < data.length; i++) {
@@ -10992,14 +10992,14 @@ $(document).ready(function () {
         var title = disco_corrente.title;
         var author = disco_corrente.author;
         var year = disco_corrente.year;
-        var cd = {
+        var card = {
           'copertina': poster,
           'titolo': title,
           'autore': author,
           'anno': year
         };
-        var html = template(cd);
-        $('main section').append(html);
+        var html = template(card);
+        $('main #card').append(html);
       }
     },
     'error': function error() {

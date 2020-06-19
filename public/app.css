@@ -34,7 +34,7 @@ main {
   padding: 200px 0px;
 }
 
-main section {
+main section#card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
